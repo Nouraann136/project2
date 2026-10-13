@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio - Component library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a class="logo" href="index.html">Studio</a>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a class="active" href="components.html">
+                        Components
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="section">
+            <h1>Component library</h1>
+
+            <p class="label">
+                Reusable components for the Studio project.
+            </p>
+        </section>
+        <section class="section">
+
+            <h2>Design tokens</h2>
+
+            <div class="swatches">
+
+                <div class="swatch">
+                    <i style="background: var(--primary)"></i>
+                    <code>--primary #2563eb</code>
+                </div>
+
+                <div class="swatch">
+                    <i style="background: var(--bg)"></i>
+                    <code>--bg #f8fafc</code>
+                </div>
+
+                <div class="swatch">
+                    <i style="background: var(--text)"></i>
+                    <code>--text #1e293b</code>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="section">
+
+            <h2>Buttons</h2>
+
+            <div class="row">
+
+                <div>
+                    <button class="btn" type="button">
+                        Default
+                    </button>
+
+                    <div class="label">default</div>
+                </div>
+
+
+                <div>
+                    <button class="btn is-hover" type="button">
+                        Hover
+                    </button>
+
+                    <div class="label">hover</div>
+                </div>
+
+
+                <div>
+                    <button class="btn" type="button" disabled>
+                        Disabled
+                    </button>
+
+                    <div class="label">disabled</div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="section">
+
+            <h2>Card</h2>
+
+            <article class="card component-card">
+
+                <h3>Card title</h3>
+
+                <p>
+                    A short description that explains what this card is about.
+                </p>
+
+                <a class="btn" href="#">
+                    Read more
+                </a>
+
+            </article>
+
+        </section>
+        <section class="section">
+
+            <h2>Responsive table</h2>
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                       <tr>
+                            <td>Nouran Yahia</td>
+                            <td>Student</td>
+                            <td>nouranyahia111@gmail.com</td>
+                            <td><span class="badge">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Lara Yahia</td>
+                            <td>Student</td>
+                            <td>larayahia111@gmail.com</td>
+                            <td><span class="badge">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dalian Yahia</td>
+                            <td>Student</td>
+                            <td>dalianyahia111@gmail.com</td>
+                            <td><span class="badge off">Away</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Mohamed Yahia</td>
+                            <td>Student</td>
+                            <td>mohamedyahia111@gmail.com</td>
+                            <td><span class="badge">Active</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+        <section class="section">
+
+            <h2>Form elements</h2>
+
+            <form class="form-card">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="role">Role</label>
+
+                    <select id="role" name="role">
+
+                        <option value="">
+                            Select your role
+                        </option>
+
+                        <option value="student">
+                            Student
+                        </option>
+
+                        <option value="developer">
+                            Developer
+                        </option>
+
+                        <option value="designer">
+                            Designer
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message"
+                    ></textarea>
+
+                </div>
+
+
+                <button class="btn" type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+        <section class="section">
+
+            <h2>Alert / Notification</h2>
+
+            <div class="alert" role="status">
+
+                <strong>Success!</strong>
+
+                <span>
+                    Your changes have been saved successfully.
+                </span>
+
+            </div>
+
+        </section>
+        <section class="section">
+
+            <h2>CSS-only Modal</h2>
+
+            <input
+                class="modal-toggle"
+                type="checkbox"
+                id="modal-toggle"
+            >
+
+            <label
+                class="btn"
+                for="modal-toggle"
+            >
+                Open modal
+            </label>
+
+
+            <div class="modal">
+
+                <div class="modal-content">
+
+                    <h2>Welcome!</h2>
+
+                    <p>
+                        This modal is created using HTML and CSS only.
+                        No JavaScript is required.
+                    </p>
+
+                    <label
+                        class="btn btn-outline"
+                        for="modal-toggle"
+                    >
+                        Close
+                    </label>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container">
+            Component library
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
